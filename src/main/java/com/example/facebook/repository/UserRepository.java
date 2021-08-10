@@ -27,7 +27,7 @@ public interface UserRepository extends JpaRepository<User,Long>, UserCustomRepo
 
     //native query
 
-    @Query(value = "select * from users  where user_name=:userName", nativeQuery = true) //q refers to alias
+    @Query(value = "select * from user  where user_name=:userName", nativeQuery = true) //q refers to alias
     public List<User> getUsersByName(String userName);
 
     //left join
