@@ -26,7 +26,7 @@ public class Post implements Serializable {
     //@ManyToOne(fetch = FetchType.EAGER , cascade={CascadeType.REMOVE,CascadeType.PERSIST})
     //@JoinColumn(name = "user_id", nullable = false)
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    //@JoinColumn(name = "user_id")
     @JsonBackReference
     private User user;
 
