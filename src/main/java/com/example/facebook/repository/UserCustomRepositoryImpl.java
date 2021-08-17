@@ -14,7 +14,9 @@ import java.util.List;
 
 public class UserCustomRepositoryImpl implements UserCustomRepository{
     @Autowired
-    private EntityManager entityManager;
+    private EntityManager entityManager; //the EntityManager interface is used to allow applications to manage and search for entities in the relational database.
+
+
     @Override
     public List<User> foundName(String userName) {
 
